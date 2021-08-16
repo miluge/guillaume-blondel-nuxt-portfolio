@@ -10,7 +10,7 @@
         <span class="block pt-4">Case Study</span>
       </NuxtLink>
       <NuxtLink to="/contact">
-        <span class="block">Contact</span>
+        <span class="block">Contact me</span>
         <span class="block pt-4">Let's talk</span>
       </NuxtLink>
     </div>

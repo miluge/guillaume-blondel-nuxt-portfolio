@@ -1,6 +1,17 @@
 <template>
-  <div class="h-screen w-full flex items-center justify-center">
-    <p class="text-2xl">Front-End Web Developper</p>
+  <div class="h-screen w-full flex flex-col items-center justify-center px-32">
+    <h1 class="text-2xl">Guillaume</h1>
+    <div class="flex w-full justify-between">
+      <NuxtLink to="#">
+        Github
+      </NuxtLink>
+      <NuxtLink to="#">
+        Linkedin
+      </NuxtLink>
+      <NuxtLink to="#">
+        Dribble
+      </NuxtLink>
+    </div>
   </div>
 </template>
 
