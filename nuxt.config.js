@@ -46,5 +46,15 @@ export default {
 
   gsap: {
     /* module options */
+    extraPlugins: {
+      cssRule: false,
+      draggable: false,
+      easel: false,
+      motionPath: false,
+      pixi: false,
+      text: false,
+      scrollTo: true,
+      scrollTrigger: true
+    }
   }
 }
