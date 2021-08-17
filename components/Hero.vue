@@ -1,7 +1,9 @@
 <template>
-  <div class="hero h-screen w-full flex flex-col items-center justify-center px-32">
-    <h1 class="text-2xl">Guillaume</h1>
-    <div class="flex w-full justify-between">
+  <div class="hero h-[98vh] w-full flex flex-col px-32 bg-black">
+    <div class="flex flex-grow items-center justify-center h-full">
+      <h1 class="text-5xl">Guillaume Blondel</h1>
+    </div>
+    <div class="flex h-32 w-full justify-between">
       <NuxtLink to="#">
         Github
       </NuxtLink>

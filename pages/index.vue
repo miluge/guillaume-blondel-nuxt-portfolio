@@ -1,13 +1,18 @@
 <template>
-  <div>
+  <div id="main">
     <Hero />
-    <div class="text-2xl">
-      <span class="overflow-hidden work">Let's work together !</span>
+    <div class="text-2xl zeubi h-[500px] overflow-hidden">
+      <p class="work">Let's work together !</p>
     </div>
-    <section id="work">
+    <section id="portfolio" class="w-full">
       <div class="flex">
-        <div></div>
-        <div></div>
+        <div class="w-1/2">
+          <img src="https://images.unsplash.com/photo-1610878785620-3ab2d3a2ae7b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="">
+        </div>
+        <div class="flex flex-col w-1/2">
+          <p class="max-w-[110px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, reprehenderit?</p>
+          <p class="max-w-[110px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dignissimos dolor eaque eos facere, incidunt ipsum natus, nihil placeat porro praesentium quaerat quasi repellat, repudiandae sapiente sed temporibus vitae voluptatum.</p>
+        </div>
       </div>
     </section>
   </div>
@@ -16,26 +21,32 @@
 <script>
 export default {
     mounted() {
-      this.animateNav()
+      this.animateText()
+      this.animateFolio()
     },
 
     methods: {
-      animateNav() {
-        let tl = this.$gsap.timeline({
+      animateText() {
+        this.$gsap.to('.work', {
+          xPercent: 60,
+          duration: 5,
           scrollTrigger: {
-            trigger: '.hero',
-            pin: true,
-            end: 'bottom',
+            trigger: '.zeubi',
+            start: 100,
             scrub: true
           }
         })
-        tl.to('.title', {
-            y: -10,
-            duration: 0.5,
-            ease: 'Power1.easeInOut',
-          })
-        .to('.label', {
-          opacity: 0,
+      },
+
+      animateFolio() {
+        this.$gsap.to('img', { scale: 0.8,
+          duration: 1,
+          scrollTrigger: {
+            trigger: '#portfolio',
+            start: 500,
+            end: 'center',
+            scrub: true
+          }
         })
       }
     }

@@ -55,6 +55,11 @@ export default {
       text: false,
       scrollTo: true,
       scrollTrigger: true
+    },
+    extraEases: {
+      expoScaleEase: false,
+      roughEase: false,
+      slowMo: true,
     }
   }
 }
