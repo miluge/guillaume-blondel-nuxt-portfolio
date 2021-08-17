@@ -13,34 +13,7 @@
 </template>
 
 <script>
-module.exports = {
-  mounted() {
-    this.animateNav()
-  },
-
-  methods: {
-    animateNav() {
-      let tl = this.$gsap.timeline({
-        scrollTrigger: {
-          trigger: '#main',
-          pin: true,
-          pinSpacing: false,
-          end: 200,
-          scrub: true
-        }
-      })
-      tl
-        .to('.label', {
-          opacity: 0,
-          y: -20,
-          duration: 1
-        })
-        .to('.title', {
-          y: -10,
-          duration: 0.5,
-          ease: 'Power1.easeInOut',
-        })
-    }
-  }
+export default {
+  name: "SocialLinks"
 }
 </script>

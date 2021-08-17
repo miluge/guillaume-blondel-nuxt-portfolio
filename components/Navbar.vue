@@ -19,10 +19,10 @@
 
 <script>
 module.exports = {
+  name: "Navbar",
   mounted() {
     this.animateNav()
   },
-
   methods: {
     animateNav() {
       let tl = this.$gsap.timeline({
