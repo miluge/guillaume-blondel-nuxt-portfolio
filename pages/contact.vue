@@ -1,6 +1,9 @@
 <template>
   <div>
-    Hello
+    <div class="pt-[151px] flex justify-center items-center">
+      <ContactMe />
+    </div>
+    <SocialLinks />
   </div>
 </template>
 
