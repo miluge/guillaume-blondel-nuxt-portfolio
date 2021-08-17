@@ -11,7 +11,11 @@ module.exports = {
   },
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      zIndex: {
+        '9000': '9000', // It's over 9000!
+      }
+    },
   },
   variants: {
     extend: {},

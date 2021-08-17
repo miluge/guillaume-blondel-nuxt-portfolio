@@ -1,5 +1,5 @@
 <template>
-  <nav id="nav" class="bg-transparent fixed h-36 w-full fixed py-5 px-14">
+  <nav id="nav" class="bg-transparent fixed h-36 w-full fixed py-5 px-14 z-9000">
     <div class="w-full flex justify-between">
       <NuxtLink to="/about">
         <span class="block title">G.</span>
